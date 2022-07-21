@@ -1,0 +1,23 @@
+#carousel{
+    box-shadow: 0 .1rem .1rem rgba(0, 0, 0, .1);
+   
+  }
+  
+  .carousel-inner{
+    max-height: 36rem!important;
+  }
+  
+  
+  /*---Change Carousel Transition Speed --*/
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active{
+    transition: transform 1.2s ease;
+  }
+  @media only screen and (min-width : 1200px) {
+    .carousel-caption
+    {
+      top:50%;
+      transform:translateY(-50%);
+    }
+  }

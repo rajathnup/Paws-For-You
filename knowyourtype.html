@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Know your type</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        body {
+  background-color:  white;
+}
+.title {
+ 
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: rgb(5, 104, 170);
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+     
+}
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin-top:20px;
+    margin-bottom: 80px;
+    background-color: rgb(214, 238, 247);
+}
+
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+.carousel-indicators .active {
+    background-color: white;
+    max-width: 12px;
+    margin: 0 3px;
+    height: 12px;
+}
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active{
+  transition: transform 0.5s ease;
+}
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel-inner{
+  max-height: 20rem!important;
+}
+  
+.btn {
+  margin-top: auto;
+}
+.navbar{
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.07rem;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+  z-index: 1;
+  
+}
+
+.desc{
+  margin: 30px 30px;
+  border: rgb(6, 88, 136) solid;
+  padding: 5px;
+  position: relative;
+  font-weight: 500;
+  border-radius: 15%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
+}
+
+.nav-item{
+  padding: 0.3rem;
+}
+
+.nav-link{
+  color: #5b5555!important;
+}
+.nav-link.active,
+.nav-link:hover{
+  color: #2f7ce0!important;
+}
+ 
+.top-bar{
+  background:rgb(75, 151, 177);
+  height: 25px;
+  padding: 0.5rem;
+}
+
+footer{
+  background-color:#dddddd;
+  padding: 1rem 2rem 3rem;
+}
+
+footer img{
+  margin: 1rem auto;
+}
+
+footer p,footer a,
+.socket a{
+  color: black;
+  text-decoration: none;
+}
+.dropdown-item:hover{
+  color: #2f7ce0!important;
+  background-color: rgb(226, 226, 226);
+}
+ul.social{
+  list-style-type: none;
+  display: flex;
+  max-width: 16rem;
+  margin: 0 auto;
+  padding: 0;
+}
+ul.social li{
+  margin: 0 auto;
+}
+
+footer .svg-inline--fa{
+  font-size: 2.3rem;
+
+}
+footer .svg-inline--fa:hover{
+ color: #68a0d2;
+  
+}
+/*============= SOCKET =============*/
+.socket{
+  background-color: #222222;
+  border-top: 0.1rem solid #4981b3;
+  margin: 0 auto;
+}
+
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+      function showAlert1() {
+        alert ("Thank you for contacting us!");
+      }
+    </script>
+    <script>
+      function showAlert2() {
+        alert ("Thank you for contacting our email.We will reach you out shortly!");
+      }
+    </script>
+</head>
+<body>
+
+    <div class="top-bar">
+		<div class="container">
+			<div class="col-12">
+
+			</div>
+		</div>
+    </div>
+    
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"><img src="img/pfylogo.png" height="50rem" 
+            alt="Paws for you" title="Paws for you" class="d-inline-block align-top"></a>
+  
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
+            <li class="nav-item"><a href="knowyourtype.html" class="nav-link active"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Know Your Type</a></li>
+            <li class="nav-item"><a href="store.html" class="nav-link"><i class="fa fa-paw" aria-hidden="true"></i>&nbsp;Adopt Now</a></li>
+            <li class="nav-item"><a href="patreon.html" class="nav-link"><i class="fas fa-hand-holding-heart"></i>&nbsp;Become a patreon</a></li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-phone-volume"></i>&nbsp;Contact us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#" button onclick="showAlert1()">Call our team</a>
+                <div class="border-top border-dark w-100 mx-auto"></div>
+                <a class="dropdown-item" href="#" button onclick="showAlert2()">Mail us at: paws4u@gmail.com</a>
+                
+              </div>
+              </li>
+              <li class="nav-item"><a href="login.php" class="nav-link"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+<div class="container py-3">
+  <div class="title h1 text-center">Your Paw Companion</div>
+  <!-- Card Start -->
+  <div class="card">
+    <div class="row ">
+
+        <div class="col-md-5">
+            <div id="CarouselTest" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#CarouselTest" data-slide-to="0" class="active"></li>
+                <li data-target="#CarouselTest" data-slide-to="1"></li>
+                <li data-target="#CarouselTest" data-slide-to="2"></li>
+    
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block" src="https://images.pexels.com/photos/1073125/pexels-photo-1073125.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block" src="https://images.pexels.com/photos/333083/pexels-photo-333083.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block" src="https://images.pexels.com/photos/2071556/pexels-photo-2071556.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+                </div>
+                <a href="#CarouselTest" class="carousel-control-prev" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="sr-only">Prev</span>
+                </a>
+        
+                <a href="#CarouselTest" class="carousel-control-next" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+      <!-- Carousel start -->
+      <div class="col-md-7 px-3">
+        <div class="card-block px-6">
+          <h4 class="card-title">German Shepherd</h4>
+          <p class="card-text">
+            The German Shepherd Dog is one of America’s most popular dog breeds — for good reasons. They’re intelligent and capable working dogs. Their devotion and courage are unmatched. And they’re amazingly versatile.
+          </p>
+          <p class="card-text">The breed also goes by the name Alsatian. Despite their purebred status, you may find German Shepherds in shelters and breed specific rescues.GSDs excel at most anything they’re trained to do: guide and assistance work for the handicapped, police and military service, herding, search and rescue, drug detection, competitive obedience, and — last but not least — faithful companion.</p>
+          <span class="desc">Height:Tall</span>
+          
+          <span class="desc">Fur length:Long/Short</span>
+          
+        </div>
+      </div>
+      <!-- End of carousel -->
+    </div>
+  </div>
+  <!-- End of card -->
+
+  <div class="card">
+    <div class="row ">
+
+        <div class="col-md-5">
+            <div id="CarouselTest1" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#CarouselTest1" data-slide-to="0" class="active"></li>
+                <li data-target="#CarouselTest1" data-slide-to="1"></li>
+                <li data-target="#CarouselTest1" data-slide-to="2"></li>
+    
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block" src="https://images.pexels.com/photos/1790446/pexels-photo-1790446.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block" src="https://images.pexels.com/photos/1739095/pexels-photo-1739095.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block" src="https://images.pexels.com/photos/1289555/pexels-photo-1289555.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+                </div>
+                <a href="#CarouselTest1" class="carousel-control-prev" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="sr-only">Prev</span>
+                </a>
+        
+                <a href="#CarouselTest1" class="carousel-control-next" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+      <!-- Carousel start -->
+      <div class="col-md-7 px-3">
+        <div class="card-block px-6">
+          <h4 class="card-title">Labardor Retriever</h4>
+          <p class="card-text">
+            Labs are famously friendly. They are companionable housemates who bond with the whole family, and they socialize well with neighbor dogs and humans alike. But don’t mistake his easygoing personality for low energy: The Lab is an enthusiastic athlete that requires lots of exercise, like swimming and marathon games of fetch, to keep physically and mentally fit.
+          </p>
+          <p class="card-text">The sturdy, well-balanced Labrador Retriever can, depending on the sex, stand from 21.5 to 24.5 inches at the shoulder and weigh between 55 to 80 pounds. The dense, hard coat comes in yellow, black, and a luscious chocolate.</p>
+          <span class="desc">Height:Tall</span>
+          
+          <span class="desc">Fur length:Short</span>
+        </div>
+      </div>
+      <!-- End of carousel -->
+    </div>
+  </div>
+<!--End of card-->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest2" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest2" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest2" data-slide-to="1"></li>
+              <li data-target="#CarouselTest2" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://images.pexels.com/photos/191353/pexels-photo-191353.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/1933464/pexels-photo-1933464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/434046/pexels-photo-434046.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <a href="#CarouselTest2" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest2" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Chihuaha</h4>
+        <p class="card-text">
+          The Chihuahua dog breed‘s charms include their small size, big personality, and variety in coat types and colors. They’re all dog, fully capable of competing in dog sports such as agility and obedience, and are among the top ten watchdogs recommended by experts.
+        </p>
+        <p class="card-text">Chihuahuas love nothing more than being with their people — even novice pet parents — and require a minimum of grooming and exercise. They make excellent apartment dogs who’ll get along with the whole family.</p>
+        
+        <span class="desc">Height:Short</span>
+          
+          <span class="desc">Fur length:Long/Short</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest3" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest3" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest3" data-slide-to="1"></li>
+              <li data-target="#CarouselTest3" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://images.pexels.com/photos/1485637/pexels-photo-1485637.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/1741235/pexels-photo-1741235.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/1467714/pexels-photo-1467714.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <a href="#CarouselTest3" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest3" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Beagle</h4>
+        <p class="card-text">
+          Small, compact, and hardy, Beagles are active companions for kids and adults alike. Canines of this dog breed are merry and fun loving, but being hounds, they can also be stubborn and require patient, creative training techniques.
+        </p>
+        <p class="card-text">Their noses guide them through life, and they’re never happier than when following an interesting scent. Beagles originally were bred as scenthounds to track small game, mostly rabbits and hare. They’re still used for this purpose in many countries today, including the United States.</p>
+        <span class="desc">Height:Short</span>
+          
+        <span class="desc">Fur length:Short</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest4" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest4" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest4" data-slide-to="1"></li>
+              <li data-target="#CarouselTest4" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://images.pexels.com/photos/4488894/pexels-photo-4488894.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/4390792/pexels-photo-4390792.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <a href="#CarouselTest4" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest4" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Rottweiler</h4>
+        <p class="card-text">
+          The Rottweiler was originally dogs bred to drive cattle to market. Later they were used to pull carts for butchers. They were among the earliest police dogs and serve with honor in the military.
+        </p>
+        <p class="card-text">Most important, they are popular family guardians and friends. Novice pet parents should beware, as these dogs are strong and intense. They need experienced care and training. Consistent, energetic pet parents will find a loving, faithful, and intelligent friend for life in a Rottie!</p>
+        <span class="desc">Height:Tall</span>
+          
+        <span class="desc">Fur length:Short</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest5" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest5" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest5" data-slide-to="1"></li>
+              <li data-target="#CarouselTest5" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://images.pexels.com/photos/2144292/pexels-photo-2144292.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/2449536/pexels-photo-2449536.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/4414708/pexels-photo-4414708.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <a href="#CarouselTest5" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest5" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">French Bulldog </h4>
+        <p class="card-text">
+          The French Bulldog has enjoyed a long history as a companion dog. Created in England to be a miniature Bulldog, they accompanied English lacemakers to France, where they acquired their “Frenchie” moniker.
+        </p>
+        <p class="card-text">Besides being companions, they once served as excellent ratters, but today their job focuses on being fabulous family friends and show dogs. Even apartment dwellers and first-time pet parents will love this affectionate breed. DogTime recommends this carrier for traveling with your small French Bulldog. You should also pick up this dog brush and massager for your short-haired pup!</p>
+        <span class="desc">Height:Short</span>
+          
+        <span class="desc">Fur length:Short</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest6" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest6" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest6" data-slide-to="1"></li>
+              <li data-target="#CarouselTest6" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/686094/pexels-photo-686094.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/1959055/pexels-photo-1959055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <a href="#CarouselTest6" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest6" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Golden Retriever </h4>
+        <p class="card-text">
+          The Golden Retriever is one of the most popular dog breeds in the United States. The breed’s friendly, tolerant attitude makes them great family pets, and their intelligence makes them highly capable working dogs.
+        </p>
+        <p class="card-text">Golden Retrievers excel at retrieving game for hunters, tracking, sniffing out contraband for law enforcement, and as therapy and service dogs. They’re also natural athletes and do well in dog sports such as agility and competitive obedience.These dogs are fairly easy to train and get along in just about any home or family. They’re great with kids and very protective of their humans. </p>
+        <span class="desc">Height:Tall</span>
+          
+        <span class="desc">Fur length:Long</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest7" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest7" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest7" data-slide-to="1"></li>
+              <li data-target="#CarouselTest7" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://images.pexels.com/photos/975413/pexels-photo-975413.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/3785355/pexels-photo-3785355.png?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/89781/doberman-dog-animal-world-animal-89781.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <a href="#CarouselTest7" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest7" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Dobermann</h4>
+        <p class="card-text">
+          Doberman Pinschers originated in Germany during the late 19th century, mostly bred as guard dogs. Their exact ancestry is unknown, but they’re believed to be a mixture of many dog breeds, including the Rottweiler, Black and Tan Terrier, and German Pinscher.
+        </p>
+        <p class="card-text">With their sleek coat, athletic build, and regal appearance, this pup looks like an aristocrat. They’re highly energetic and smart dogs who perform well in police and military work, canine sports, and as family guardians and companions.</p>
+        <span class="desc">Height:Tall</span>
+          
+        <span class="desc">Fur length:Short</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest8" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest8" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest8" data-slide-to="1"></li>
+              <li data-target="#CarouselTest8" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://images.pexels.com/photos/5912908/pexels-photo-5912908.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/5913069/pexels-photo-5913069.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://vetstreet.brightspotcdn.com/dims4/default/a6272cd/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F70%2F337d20a40111e087a80050568d634f%2Ffile%2FAlaskan-Malamute-2-578mk062311.jpg"  alt="">
+              </div>
+              <a href="#CarouselTest8" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest8" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Alaskan Malamute</h4>
+        <p class="card-text">
+          Firm but loving training should begin in early puppyhood. That said, a well-behaved Mal is a joy to be with—playful, gentle, friendly, and great with kids.
+        </p>
+        <p class="card-text">The Alaskan Malamute stands 23 to 25 inches at the shoulder and weighs 75 to 85 pounds. Everything about Mals suggests their origin as an arctic sled dog: The heavy bone, deep chest, powerful shoulders, and dense, weatherproof coat all scream, “I work hard for a living!” But their almond-shaped brown eyes have an affectionate sparkle, suggesting Mals enjoy snuggling with their humans when the workday is done. Mals are pack animals. And in your family “pack,” the leader must be you.</p>
+        <span class="desc">Height:Tall</span>
+          
+        <span class="desc">Fur length:Long</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest9" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest9" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest9" data-slide-to="1"></li>
+              <li data-target="#CarouselTest9" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://images.pexels.com/photos/4087386/pexels-photo-4087386.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/5465335/pexels-photo-5465335.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://images.pexels.com/photos/5693961/pexels-photo-5693961.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  alt="">
+              </div>
+              <a href="#CarouselTest9" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest9" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Pomeranian</h4>
+        <p class="card-text">Descended from large sled dog breeds, the now-tiny Pomeranian has a long and interesting history. The foxy-faced dog, nicknamed “the little dog who thinks he can,” is compact, active, and capable of competing in agility and obedience or simply being a family friend.
+        </p>
+        <p class="card-text">Poms may be small, but they don’t always act that way and may even challenge larger dogs. But as long as you give your dog plenty of exercise and playtime, keep them out of hot weather, and give them lots of love and attention, you’ll have a loving, adorable, furry family companion!</p>
+        <span class="desc">Height:Short</span>
+          
+        <span class="desc">Fur length:Long</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest10" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest10" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest10" data-slide-to="1"></li>
+              <li data-target="#CarouselTest10" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://media.istockphoto.com/photos/cute-little-bichon-frise-dog-picture-id635988430?k=6&m=635988430&s=612x612&w=0&h=pKJdtFMxhp5GGuMXn64dYHuNsqdb-kDbIUr4pVVPfb4=" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/white-puppies-picture-id153579479?k=6&m=153579479&s=612x612&w=0&h=sQIgKf-LNr1db7pN7_zRrv44GVGwEuJqaR4VXJh2Xxo="  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/bichon-frise-dog-picture-id498275462?k=6&m=498275462&s=612x612&w=0&h=IgwUTQSCV8GBoVIzVPMQWQ_QlYuoJyJx4uEgOMAqTdE="  alt="">
+              </div>
+              <a href="#CarouselTest10" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest10" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Bichon Frise </h4>
+        <p class="card-text">
+          The Bichon Frise (pronounced BEE-shawn FREE-say; the plural is Bichons Frises) is a cheerful, small dog breed with a love of mischief and a lot of love to give. With their black eyes and fluffy white coat, the Bichon looks almost like a child’s toy.
+        </p>
+        <p class="card-text">It doesn’t take long to realize that the Bichon can be your happiest and most enthusiastic companion. They’re super playful and intelligent, and even novice pet parents and apartment dwellers will get along great with these dogs. However, they do need plenty of playtime and activity, and they don’t care for being left home alone for long hours of the day.</p>
+        <span class="desc">Height:Short</span>
+          
+        <span class="desc">Fur length:Long</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest11" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest11" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest11" data-slide-to="1"></li>
+              <li data-target="#CarouselTest11" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://media.istockphoto.com/photos/one-dalmatian-puppy-in-a-field-with-yellow-flowers-picture-id467082005?k=6&m=467082005&s=612x612&w=0&h=delQlqA9m0DCpLYdTPnZhLKJOnH3pnTSIWipF7JT-4w=" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/dalmatian-picture-id175453491?k=6&m=175453491&s=612x612&w=0&h=xp1NONvWlaoB7iWOi_bK3k-kIio4q_7otCS9CY44QQQ="  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/dalmatian-dog-isolated-on-white-picture-id500851439?k=6&m=500851439&s=612x612&w=0&h=LmN3JxuvNwVd3YLE4DVb98iZV3z950UjP1jtNBXXhpA="  alt="">
+              </div>
+              <a href="#CarouselTest11" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest11" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Dalmatian</h4>
+        <p class="card-text">
+          Best known as the star of Disney’s 101 Dalmatians, this sleek and athletic Dalmatian dog breed has a history that goes back several hundred years. They started out as a coach dog but also served in many other capacities, including hunter, firehouse dog, and circus performer.
+        </p>
+        <p class="card-text">As charming in life as in film, Dalmatians go from gallant to goofy to gallant again in the blink of an eye. They love to be a part of everything their family does. That said, they have high energy levels and need plenty of exercise. </p>
+        <span class="desc">Height:Short</span>
+          
+        <span class="desc">Fur length:Long</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest12" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest12" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest12" data-slide-to="1"></li>
+              <li data-target="#CarouselTest12" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://media.istockphoto.com/photos/american-bully-puppy-picture-id1184492322?k=6&m=1184492322&s=612x612&w=0&h=e6-iw1ax5lsgffaKHh6sq-9o4W-0tsQqf0SI14fEYbk=" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/american-pit-bull-terrier-picture-id1048956100?k=6&m=1048956100&s=612x612&w=0&h=KAUbSWldU9gLJVtGV2EzrDBJYX-s6VlihTAF6l1QQF0="  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/golden-pitbull-lying-on-the-grass-picture-id1161042928?k=6&m=1161042928&s=612x612&w=0&h=NOw2YTK-_fS514hNSFjSfGGNSYf1F8HqOhZy07MverA="  alt="">
+              </div>
+              <a href="#CarouselTest12" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest12" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">American Pitbull</h4>
+        <p class="card-text">
+          The American Pit Bull Terrier is a companion and family dog breed. Originally bred to “bait” bulls, the breed evolved into all-around farm dogs, and later moved into the house to become “nanny dogs” because they were so gentle around children.
+        </p>
+        <p class="card-text">Their tenacity, gameness, and courage make them popular competitors in the sports of weight pulling, agility, and obedience. Of course, you can also find them living as companions, showering their humans with love and affection.</p>
+        <span class="desc">Height:Long</span>
+          
+        <span class="desc">Fur length:Short</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest13" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest13" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest13" data-slide-to="1"></li>
+              <li data-target="#CarouselTest13" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://media.istockphoto.com/photos/dog-breed-welsh-corgi-pembroke-picture-id526828202?k=6&m=526828202&s=612x612&w=0&h=eM4ZzIuQP5iJPmA0ZWayLD4UEMkjy7XvRm2sNVjBFaQ=" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/adorable-welsh-corgi-pembroke-on-green-lawn-at-home-picture-id1077145200?k=6&m=1077145200&s=612x612&w=0&h=y_N-ix0MCWZJENTIDnL7DWMzJzlASHaE5bqCjDZyiNM="  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/corgi-dog-smile-and-happy-in-summer-sunny-day-picture-id953069774?k=6&m=953069774&s=612x612&w=0&h=S1pb3n3UhhrnViNaEuEM-AsO-rasGU-FaxfQozyPcOE="  alt="">
+              </div>
+              <a href="#CarouselTest13" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest13" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Pembroke Welsh Corgi</h4>
+        <p class="card-text">
+          Originally bred to herd cattle, sheep, and horses, the Pembroke Welsh Corgi is an active and intelligent dog breed. Easy to train and eager to learn, Pembrokes are great with children and other pets, and you can find them in four different coat colors and markings.
+        </p>
+        <p class="card-text">Adaptable and loving with the whole family, Corgis can fit into just about any household, whether it’s an apartment or large home with a yard. However, they do have quite a bit of energy for a small dog. They’ll need plenty of walks and active play sessions.</p>
+        <span class="desc">Height:Short</span>
+          
+        <span class="desc">Fur length:Long</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest14" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest14" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest14" data-slide-to="1"></li>
+              <li data-target="#CarouselTest14" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://media.istockphoto.com/photos/happy-little-orange-havanese-puppy-is-sitting-in-the-grass-picture-id520942487?k=6&m=520942487&s=612x612&w=0&h=ZisSxTVIFBYkZaNrhWJSxPviNMfo3xI17xbKGkETMPM=" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/beautiful-young-havanese-dog-sitting-on-a-gravel-forest-road-picture-id506990666?k=6&m=506990666&s=612x612&w=0&h=KF0G9e8u4Y_42zPvNwTSHM6Et38l6fMo2G0feRbmxIo="  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/playful-havanese-puppy-brings-a-pink-ball-in-the-grass-picture-id687803138?k=6&m=687803138&s=612x612&w=0&h=aFjA7gHjgcWtGDqFi59ewvM22tDhESD35QOF-qYvLFU="  alt="">
+              </div>
+              <a href="#CarouselTest14" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest14" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Havanese Dog</h4>
+        <p class="card-text">
+          The Havanese dog breed has won many admirers with their long, silky hair, expressive eyes, and cuddly size. Bred as a companion dog to the Cuban aristocracy in the 1800s, they’ve earned the nickname “Velcro dog” because they stick so closely to their owner’s side.
+        </p>
+        <p class="card-text">Don’t write this small pooch off as just a lapdog; the Havanese is trainable and surprisingly energetic, and they’ve excelled in dog sports and canine careers ranging from circus performer to assisting people with disabilities. They adore their humans and don’t handle long periods of time left alone at home.</p>
+        <span class="desc">Height:Short</span>
+          
+        <span class="desc">Fur length:Long</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest15" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest15" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest15" data-slide-to="1"></li>
+              <li data-target="#CarouselTest15" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://media.istockphoto.com/photos/fluffy-white-cat-lying-down-looking-into-camera-picture-id140469307?k=6&m=140469307&s=612x612&w=0&h=sF5Q9kuGlIx70SXvYwfCTXO_iFTVlOtoe0-zcnSEgDI=" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/angry-looking-persian-cat-at-home-picture-id1016698044?k=6&m=1016698044&s=612x612&w=0&h=xJPr4G-aHKc8bq8wRxXjlg_iVrqUxKVs6Rf4apim4q4="  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/white-persian-cats-picture-id624488988?k=6&m=624488988&s=612x612&w=0&h=_AkMiLf29zFUik72MLubs1ch3TqO-wFBVIelQE5ZMTE="  alt="">
+              </div>
+              <a href="#CarouselTest15" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest15" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Persian Cat </h4>
+        <p class="card-text">
+          The dignified and docile Persian cat is known for being quiet and sweet.Although Persians tend to be relaxed and easygoing, they also command an air of royalty. They may not be quick to hiss or scratch, but that doesn’t mean they won’t become annoyed when bothered by loud children or pets.
+        </p>
+        <p class="card-text">However, those who treat the Persian cat with the dignity and gentleness they deserve will be rewarded with an affectionate lap cat who enjoys a good petting, or even a brush through their hair.</p>
+          
+        <span class="desc">Fur length:Long</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest17" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest17" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest17" data-slide-to="1"></li>
+              <li data-target="#CarouselTest17" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://media.istockphoto.com/photos/cat-lying-down-on-a-sofa-picture-id1043748292?k=6&m=1043748292&s=612x612&w=0&h=ZUau434Q7DuEV_kNV1izCQ9uMYqUyVgPtemU7wxKIDw=" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/pretty-british-shorthair-cat-standing-on-a-post-of-the-garden-fence-picture-id1076122346?k=6&m=1076122346&s=612x612&w=0&h=_MAJMpQGSLPJVk82Yt13MGfYbKOcSmHGcHTmZBFGggs="  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/cute-british-short-hair-cat-picture-id1027044266?k=6&m=1027044266&s=612x612&w=0&h=IQ5npzwBuMUHHmjlsPkmFfmyKQhkc8_S8okSbuEqJUw="  alt="">
+              </div>
+              <a href="#CarouselTest17" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest17" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">British Shorthair Cat</h4>
+        <p class="card-text">
+          Full of British reserve, the British Shorthair cat has a quiet voice and is an undemanding companion.
+        </p>
+        <p class="card-text">While not overly affectionate, the British Shorthair tends to get along just fine with everyone. They’re mellow and will tolerate other pets, and even though they may not seek out snuggles at every opportunity, they’re happy to be scooped up for a good cuddle.While some cats get a reputation for being high-strung and jumpy, the British Shorthair is anything but. If you’re looking for a best buddy who stays calm as a cucumber and won’t do much pestering, this might just be the feline for you.</p>
+        <span class="desc">Fur length:Short</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest18" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest18" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest18" data-slide-to="1"></li>
+              <li data-target="#CarouselTest18" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://media.istockphoto.com/photos/beautiful-coon-in-nature-in-spring-picture-id947819886?k=6&m=947819886&s=612x612&w=0&h=FbkxK6G9litSuDAfewB4WR3pQwMQxZhNRW7DyRugw74=" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/portrait-of-maine-coon-cat-on-black-background-picture-id819476630?k=6&m=819476630&s=612x612&w=0&h=a138Et3wVfUf2ekNg_1q81JRywA30r_mKp1mh1zs22Q="  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/ginger-maine-coon-picture-id670919260?k=6&m=670919260&s=612x612&w=0&h=hpz5K1RPMVasfZCrqm_tzHtjtbUj74wu5EchKhRZdzQ="  alt="">
+              </div>
+              <a href="#CarouselTest18" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest18" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Maine Coon</h4>
+        <p class="card-text">
+          The Maine Coon is a native New Englander, hailing from Maine, where they were popular mousers, farm cats, and–most likely–ship’s cats, at least as far back as the early 19th century.
+        </p>
+        <p class="card-text">he first thing you’ll probably notice is that Maine Coons are big–really big! In fact, the record for the world’s longest house cat belongs to a Maine Coon who grew to be over four feet long.But these kitties have more going for them than size. They’re affectionate without being needy, they’re adaptable, and they’ve kept their hunting instincts, just in case you need a good mouser. </p>
+        <span class="desc">Fur length:Long/Short</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest19" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest19" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest19" data-slide-to="1"></li>
+              <li data-target="#CarouselTest19" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://media.istockphoto.com/photos/american-shorthair-cat-in-room-picture-id1140883355?k=6&m=1140883355&s=612x612&w=0&h=dm9X1SRNV5GLdxkZ0fDai-KOxTu2wZa_vxNX0WBuajU=" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/american-shorthair-cat-in-a-beautiful-and-clean-background-picture-id153177119?k=6&m=153177119&s=612x612&w=0&h=CCQOvy1EzWxQ8BpAadQAX7Md4xzDeCjIi6oBJAhG5kI="  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/european-short-haired-cat-picture-id1072769156?k=6&m=1072769156&s=612x612&w=0&h=bYR0JRiH4VzkO-1Mvw2N6yyDkrzc8nm0VQneeRRjABA="  alt="">
+              </div>
+              <a href="#CarouselTest19" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest19" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">American Shorthair</h4>
+        <p class="card-text">
+          The American shorthair cat has a short, dense coat and is believed to have come to America aboard the Mayflower, earning its passage as a rat catcher. With their affectionate nature, compact build, round faces, and short ears, American shorthairs make beautiful and loving pets.
+        </p>
+        <p class="card-text">The phrase that “form follows function” was never truer than it is with American shorthair breed. That’s because this gorgeous and athletic breed was shaped and designed to be the ultimate in pest control.</p>
+        <span class="desc">Fur length:Short</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+<div class="card">
+  <div class="row ">
+
+      <div class="col-md-5">
+          <div id="CarouselTest20" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselTest20" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselTest20" data-slide-to="1"></li>
+              <li data-target="#CarouselTest20" data-slide-to="2"></li>
+  
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="https://media.istockphoto.com/photos/beautiful-cat-at-home-picture-id1158255466?k=6&m=1158255466&s=612x612&w=0&h=cnwvSLXqhGLc4XCp2elkns6CobNdaZJcz51n4UbMJTI=" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/young-bengal-cat-closeup-portrait-picture-id475504290?k=6&m=475504290&s=612x612&w=0&h=kkT3S0JVp8Flpyw2c3CBtZ0AJhiBL3nMwLxOaZ6iI1s="  alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="https://media.istockphoto.com/photos/bengal-cat-outdoor-picture-id678164900?k=6&m=678164900&s=612x612&w=0&h=Y3mXQ0_f2HdYIrcebqmEwagAjMLiGFMyL1DLFj1OVzU="  alt="">
+              </div>
+              <a href="#CarouselTest20" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Prev</span>
+              </a>
+      
+              <a href="#CarouselTest20" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Carousel start -->
+    <div class="col-md-7 px-3">
+      <div class="card-block px-6">
+        <h4 class="card-title">Bengal Cat</h4>
+        <p class="card-text">
+          The Bengal could never be called delicate. They’re athletes: agile and graceful with a strong, muscular body, as befits a cat who looks as if they belong in the jungle.
+        </p>
+        <p class="card-text">Despite their wild appearance, Bengal cats are actually quite affectionate with their human families. That said, they also have high energy and a fun-loving, playful side. They want to stay active and need a home that can match their energy.</p>
+        <span class="desc">Fur length:Short</span>
+      </div>
+    </div>
+    <!-- End of carousel -->
+  </div>
+</div>
+<!-- End of card -->
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<footer>
+  <div class="container">
+    
+    <div class="row text-dark text-center py-4 justify-content-center">
+
+      <div class="col-sm-10 col-md-8 col-lg-6">
+        <img src="img/pfylogo.png" height="50rem" alt="">
+        <p>We provide services to our customers with great love and joy.</p>
+        <p>Feel free to contact us</p>
+
+        <ul class="social pt-3">
+          <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+  </footer>
+<!-- End Footer -->
+
+
+<!-- Start Socket -->
+  <div class="socket text-light text-center py-3">
+    <p>&copy; <a style="color: white;" href="#" target="_blank">www.pawsforyou.com</a></p>
+  </div>
+<!-- End Socket -->
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
